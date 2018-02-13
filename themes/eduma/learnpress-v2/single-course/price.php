@@ -26,7 +26,7 @@ $is_required = $course->is_required_enroll();
 	$class .= ( $sale_price !== '' ) ? ' has-origin' : '';
 	if ( $course->is_free() || !$is_required ) {
 		$class .= ' free-course';
-		$price = esc_html__( 'Free', 'eduma' );
+		$price = esc_html__( 'Gratuit', 'eduma' );
 	}
 
 	?>
