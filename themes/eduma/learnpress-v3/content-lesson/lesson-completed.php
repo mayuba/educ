@@ -1,0 +1,1 @@
+<button class="complete-lesson-button completed" disabled="disabled"> <?php _e( 'Completed', 'eduma' ); ?></button>
