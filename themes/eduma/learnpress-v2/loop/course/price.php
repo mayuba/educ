@@ -34,10 +34,10 @@ $is_required = $course->is_required_enroll();
 		<div class="value<?php echo $class; ?>" itemprop="price">
 			<?php
 			if ( $sale_price !== '' ) {
-				//echo '<span class="course-origin-price">' . $origin_price . '</span>';
+				echo '<span class="course-origin-price">' . $origin_price . '</span>';
 			}
 			?>
-			<?php //echo $price; ?>
+			<?php echo $price; ?>
 		</div>
 		<meta itemprop="priceCurrency" content="<?php echo learn_press_get_currency_symbol(); ?>" />
 	</div>
