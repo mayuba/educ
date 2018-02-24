@@ -214,7 +214,7 @@ if( !empty( $buy_through_membership )  && $buy_through_membership == 'no' ) {
 
     <?php //endif; ?>
 
-    <?php thim_related_courses(); ?>
+    <?php //thim_related_courses(); ?>
 
     <?php do_action( 'learn_press_after_single_course' ); ?>
 
