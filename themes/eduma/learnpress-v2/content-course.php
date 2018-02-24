@@ -17,6 +17,7 @@ if ( !defined( 'ABSPATH' ) ) {
 exit; // Exit if accessed directly
 }
 $class .= ' lpr_course';
+define('CSS_PATH', 'https://www.ityvu.com/wp-content/uploads/ac_assets/content_box_ityvu/'); //define CSS path 
 
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
