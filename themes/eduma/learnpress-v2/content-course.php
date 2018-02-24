@@ -22,7 +22,7 @@ define('CSS_PATH', 'https://www.ityvu.com/wp-content/uploads/ac_assets/content_b
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
 	<?php do_action( 'learn_press_before_courses_loop_item' ); ?>
-	<div class="course-item">
+	<!-- <div class="course-item"> -->
 		
 	<div class="training-block training-block-business">
 		<a href="{{lien_url}}">
@@ -79,6 +79,6 @@ define('CSS_PATH', 'https://www.ityvu.com/wp-content/uploads/ac_assets/content_b
 				<a href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html_e( 'Read More', 'eduma' ); ?></a>
 			</div>
 		</div>
-	</div>
+	<!--</div>-->
 	<?php do_action( 'learn_press_after_courses_loop_item' ); ?>
 </div>
