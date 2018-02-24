@@ -22,6 +22,30 @@ $class .= ' lpr_course';
 <div id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
 	<?php do_action( 'learn_press_before_courses_loop_item' ); ?>
 	<div class="course-item">
+		
+	<div class="training-block training-block-business">
+		<a href="{{lien_url}}">
+			<div class="training-block-header">
+			<img alt="Entrepreneur - Niveau Sénior" src="{{image}}">
+				<div class="training-tag" style="background-image:linear-gradient(-270deg,{{color1}},{{color2}});" >
+					<?php
+					//learn_press_course_instructor();
+					//do_action( 'learn_press_before_the_title' );
+					the_title( sprintf( '<h2 class="course-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+					do_action( 'learn_press_after_the_title' );
+					?>
+				</div>
+				</div>
+				<div class="training-block-body">
+				<h3>{{sous_categories}}</h3>
+				<br>
+				<p>{{description}}</p>
+				<div class="training-block-footer" style="background-image:linear-gradient(-270deg,{{color1}},{{color2}});">
+				<span>{{footer}}</span>
+				</div>
+			</div>
+		</a>
+	</div>
 		<?php learn_press_course_thumbnail(); ?>
 		<div class="thim-course-content">
 			<?php
