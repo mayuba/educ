@@ -26,11 +26,11 @@ $count_student = $course->count_users_enrolled( 'append' ) ? $course->count_user
 	</div>
 	<div class="thim-course-content">
 		<div class="course-author">
-			<?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>
+			<?php //echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>
 			<div class="author-contain">
 				<div class="value">
-					<a href="<?php echo esc_url( learn_press_user_profile_link( get_the_author_meta( 'ID' ) ) ); ?>">
-						<?php echo get_the_author(); ?>
+					<a href="<?php //echo esc_url( learn_press_user_profile_link( get_the_author_meta( 'ID' ) ) ); ?>">
+						<?php //echo get_the_author(); ?>
 					</a>
 				</div>
 			</div>
@@ -55,7 +55,7 @@ $count_student = $course->count_users_enrolled( 'append' ) ? $course->count_user
 				<?php do_action( 'learn_press_begin_course_students' ); ?>
 
 				<div class="value"><i class="fa fa-group"></i>
-					<?php echo esc_html( $count_student ); ?>
+					<?php //echo esc_html( $count_student ); ?>
 				</div>
 				<?php do_action( 'learn_press_end_course_students' ); ?>
 
@@ -64,7 +64,7 @@ $count_student = $course->count_users_enrolled( 'append' ) ? $course->count_user
 			<div class="course-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 				<?php if ( $course->is_free() ) : ?>
 					<div class="value free-course" itemprop="price" content="<?php esc_attr_e( 'Free', 'eduma' ); ?>">
-						<?php esc_html_e( 'Free', 'eduma' ); ?>
+						<?php //esc_html_e( 'Free', 'eduma' ); ?>
 					</div>
 				<?php else:
 					$price = $course->get_price_html();
@@ -72,9 +72,9 @@ $count_student = $course->count_users_enrolled( 'append' ) ? $course->count_user
 					?>
 					<div class="value " itemprop="price" content="<?php echo esc_attr( $price ); ?>">
 						<?php
-						echo esc_html( $price );
+						//echo esc_html( $price );
 						if ( $price != $origin_price ) {
-							echo '<span class="course-origin-price">' . $origin_price . '</span>';
+							//echo '<span class="course-origin-price">' . $origin_price . '</span>';
 						}
 						?>
 					</div>
