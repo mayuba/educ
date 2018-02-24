@@ -202,11 +202,11 @@ if( !empty( $buy_through_membership )  && $buy_through_membership == 'no' ) {
 
         <?php if ( $is_enrolled || $user->has_course_status( $course->id, array( 'enrolled', 'finished' ) ) || !$require_enrolled ) { ?>
 
-            <?php learn_press_get_template( 'single-course/content-learning.php', array() ); ?>
+            <?php //learn_press_get_template( 'single-course/content-learning.php', array() ); ?>
 
         <?php } else { ?>
 
-            <?php learn_press_get_template( 'single-course/content-landing.php', array() ); ?>
+            <?php //learn_press_get_template( 'single-course/content-landing.php', array() ); ?>
 
         <?php } ?>
 
@@ -216,8 +216,8 @@ if( !empty( $buy_through_membership )  && $buy_through_membership == 'no' ) {
 
     <?php //thim_related_courses(); ?>
 
-    <?php do_action( 'learn_press_after_single_course' ); ?>
+    <?php //do_action( 'learn_press_after_single_course' ); ?>
 
-    <?php do_action( 'learn_press_after_main_content' ); ?>
+    <?php //do_action( 'learn_press_after_main_content' ); ?>
 
 <?php }?>
